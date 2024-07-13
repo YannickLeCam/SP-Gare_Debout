@@ -50,10 +50,28 @@ nav li , nav a:visited ,nav a {
     justify-content: center;
     align-items: center;
     white-space: nowrap;
+    position: relative;
+
 }
 
 nav li:hover{
     color: var(--hover);
+}
+nav li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--hover);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+nav li:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 /*
