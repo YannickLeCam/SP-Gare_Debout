@@ -206,10 +206,11 @@ PARTIE Quote
     justify-content: center;
     align-items: center;
     padding: 5% 10% 4%;
+    background-color: var(--jaune);
 }
 
 #quoteContent{
-    color: var(--jaune);
+    color: var(--gris);
     font-size: xx-large;
     text-align: justify;
     font-style: italic;
@@ -217,7 +218,7 @@ PARTIE Quote
 }
 
 #author{
-    color: var(--jaune);
+    color: var(--gris);
     font-size: x-large;
     text-align: right;
     align-self: flex-end;
