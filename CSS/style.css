@@ -243,3 +243,88 @@ PARTIE Quote
     position: absolute;
     opacity: 0.5;
  }
+
+ /*
+========================================================================================
+PARTIE Footer
+========================================================================================
+*/
+
+#footerWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#gridFooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#logoFooter a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logoFooter img{
+    width: 50%;
+}
+
+#infoFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#infoFooter p{
+    color: var(--jaune);
+    font-size: 1.5vh;
+}
+
+#followUs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--jaune);
+    gap: 10%;
+}
+
+#followUs h4{
+    font-size: 2vw;
+}
+
+#logoSocialNetwork{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    width: 100%;
+}
+
+#logoSocialNetwork i {
+    font-size: 3vw;
+}
+
+#logoSocialNetwork i:hover{
+    color: var(--hover);
+}
+#footerWrapper p{
+    color: var(--jaune);
+    text-align: center;
+    font-size: 1.5vw;
+    transition: 0.5s;
+}
+#footerWrapper p a,#footerWrapper p a:visited,#footerWrapper p a:checked{
+    color: var(--jaune);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#footerWrapper p a:hover{
+    color: var(--hover);
+    transition: 0.5s;
+}
+
