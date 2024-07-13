@@ -293,7 +293,7 @@ PARTIE Footer
 }
 
 #followUs h4{
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 #logoSocialNetwork{
@@ -326,5 +326,45 @@ PARTIE Footer
 #footerWrapper p a:hover{
     color: var(--hover);
     transition: 0.5s;
+}
+
+ /*
+========================================================================================
+PARTIE Responsive
+========================================================================================
+*/
+@media (max-width: 800px) {
+    #cardsBox{
+        flex-direction: column;
+    }
+    .cards{
+        width: 80%;
+        margin: 0 10%;
+    }
+    #quote{
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+
+    #parallaxe h3{
+        font-size: 7vh;
+    }
+    
+    #parallaxe p {
+        font-size: 2vh;
+    }
+    #gridFooter{
+        grid-template-columns: 1fr;
+        
+    }
+    #gridFooter div {
+        margin: 3%;
+    }
+    #footerWrapper p,#gridFooter h4 {
+        font-size: 4vw;
+    }
+    #gridFooter i {
+        font-size: 10vw;
+    }
 }
 
