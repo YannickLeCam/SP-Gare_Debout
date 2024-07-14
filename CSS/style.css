@@ -32,6 +32,15 @@ header img {
     max-height: 9vh;
 }
 
+#openBurgerMenu , #closeBurgerMenu{
+    font-size: 5vh;
+    color:var(--jaune);
+    display: none;
+    position: absolute;
+    right: 3%;
+    transition: 0.5s;
+}
+
 nav{
     display: flex;
     margin-right: 7%;
@@ -357,6 +366,7 @@ PARTIE Informations
     font-size: 7vh;
     font-family: "Permanent Marker", cursive;
     margin-bottom: 3%;
+    text-align: center;
 }
 #contactInformations p{
     margin: 2%;
@@ -475,7 +485,37 @@ PARTIE Responsive
     #followUs h4 {
         font-size: 4vh;
     }
+    nav{
 
+        position: absolute;
+        right: -100vw;
+        bottom: -15vh;
+        height: 15.1vh;
+        background-color: rgba(56, 56, 56, 0.8);
+        margin: 0;
+        width: 50vw;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav li{
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #openBurgerMenu{
+        display: flex;
+        transition: 0.5s;
+    }
+    .deroule{
+        right: 0;
+        transition: 0.5s;
+    }
     
 }
 
