@@ -182,7 +182,6 @@ PARTIE Parallaxe
     background:url('../asset/Gare_Debout_bg_parallaxe_bw.jpg');
     background-position: center;
     background-size: cover;
-
     display: flex;
     align-items: start;
     justify-content: center;
@@ -434,6 +433,9 @@ PARTIE Responsive
         width: 80%;
         margin: 0 10%;
     }
+    .cards img {
+        width: 50%;
+    }    
     #quote{
         padding-right: 15%;
         padding-left: 15%;
