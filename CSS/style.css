@@ -2,12 +2,14 @@
     --jaune : rgba(254,198,75,255);
     --hover : #FED885;
     --gris : rgb(56, 56, 56);
+    --grisHover : rgb(129, 129, 129);
 }
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Raleway", sans-serif;
 }
 
 body{
@@ -51,7 +53,7 @@ nav li , nav a:visited ,nav a {
     align-items: center;
     white-space: nowrap;
     position: relative;
-
+    font-size: 2vh;
 }
 
 nav li:hover{
@@ -73,6 +75,12 @@ nav li:hover::after{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+ /*
+========================================================================================
+PAGE Home
+========================================================================================
+*/
 
 /*
 ========================================================================================
@@ -109,7 +117,7 @@ Partie ACTIVITIES
 }
 #activities h2 {
     color: var(--jaune);
-    font-size: 5rem;
+    font-size: 10vh;
     font-family: "Permanent Marker", cursive;
 }
 
@@ -327,13 +335,98 @@ PARTIE Footer
     color: var(--hover);
     transition: 0.5s;
 }
+ /*
+========================================================================================
+PAGE Contact
+========================================================================================
+*/
+ /*
+========================================================================================
+PARTIE Informations
+========================================================================================
+*/
+#contactInformations{
+    background-color: var(--jaune);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5% 5%;
+}
+#contactInformations h1{
+    color: var(--gris);
+    font-size: 7vh;
+    font-family: "Permanent Marker", cursive;
+    margin-bottom: 3%;
+}
+#contactInformations p{
+    margin: 2%;
+}
+#contactInformations p,#contactInformations a ,#contactInformations a:checked, #contactInformations a:visited{
+    color: var(--gris);
+    text-decoration: none;
+    font-size: 2vh;
+    
+}
+#contactInformations #followUs{
+    color: var(--gris);
+}
+
+#contactInformations a:hover,#contactInformations #logoSocialNetwork i:hover{
+    color: var(--grisHover);
+}
+/*
+========================================================================================
+PARTIE Join
+========================================================================================
+*/
+#joinAsso{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3% 3%;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    color: var(--jaune);
+    text-align: center;    
+}
+
+#joinAsso h2{
+    font-family: "Permanent Marker", cursive;
+    font-size: 5vh;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+#joinAsso h3{
+    font-family: "Permanent Marker", cursive;
+    font-size: 3vh;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+#joinAsso p{
+    font-size: 2vh;
+}
+
+ /*
+========================================================================================
+PARTIE Maps
+========================================================================================
+*/
+
+#map iframe{
+    height: 50vh;
+    width: 100%;
+}
 
  /*
 ========================================================================================
 PARTIE Responsive
 ========================================================================================
 */
-@media (max-width: 800px) {
+@media (max-width: 950px) {
     #cardsBox{
         flex-direction: column;
     }
@@ -347,11 +440,12 @@ PARTIE Responsive
     }
 
     #parallaxe h3{
-        font-size: 7vh;
+        font-size: 5vh;
     }
     
     #parallaxe p {
         font-size: 2vh;
+        font-weight: 600;
     }
     #gridFooter{
         grid-template-columns: 1fr;
@@ -366,5 +460,20 @@ PARTIE Responsive
     #gridFooter i {
         font-size: 10vw;
     }
+    #activities h2 {
+        font-size: 7vh;
+    }
+    #joinAsso{
+        grid-template-columns: 1fr;
+        margin-bottom: 10%;
+    }
+    #logoSocialNetwork i {
+        font-size: 7vw;
+    }
+    #followUs h4 {
+        font-size: 4vh;
+    }
+
+    
 }
 
