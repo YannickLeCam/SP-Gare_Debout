@@ -26,6 +26,7 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 99;
 }
 
 header img {
@@ -84,6 +85,72 @@ nav li:hover::after{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+ /*
+========================================================================================
+PAGE Galerie
+========================================================================================
+*/
+ /*
+========================================================================================
+PARTIE Maps
+========================================================================================
+*/
+#imagesContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    padding: 0 15%;
+}
+
+#imagesContainer img{
+width: 100%;
+height: 100%;
+z-index: 10;
+transition: 0.5s;
+padding: 3%;
+}
+
+#imagesContainer img:hover{
+transform: scale(1.1);
+transition: 0.5s;
+z-index: 15;
+}
+
+#wrapper h1{
+    font-family: "Permanent Marker", cursive;
+    font-size: 10vh;
+    margin-bottom: 10%;
+    text-align: center;
+    color: var(--jaune);
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+  }
+  
+  #enlargedImg {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 10vh;
+    color: white;
+    cursor: pointer;
+  }
 
  /*
 ========================================================================================
@@ -430,6 +497,7 @@ PARTIE Maps
     width: 100%;
 }
 
+
  /*
 ========================================================================================
 PARTIE Responsive
@@ -516,6 +584,8 @@ PARTIE Responsive
         right: 0;
         transition: 0.5s;
     }
-    
+    #imagesContainer{
+        grid-template-columns: 1fr;
+    }
 }
 
